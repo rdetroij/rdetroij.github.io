@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Robbert De Troij">
+  <meta name="description" content="Portfolio van Robbert De Troij">
+  <meta name="keywords" content="Robbert De Troij, tekening, tekeningen, portret, portfolio, houtskool, pastel">
+
+  <title>Robbert De Troij</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <script src="scripts/toggle-active.js" defer></script>
+  <script src="scripts/toggle-hamburger.js" defer></script>
+  <script src="scripts/toggle-modal.js" defer></script>
+
+</head>
+
+<body>
+
+  <!-- Hoofding -->
+  <!-- De hoofding bevat: 
+   * een naam/logo en 
+   * een navigatiemenu met links naar de verschillende onderdelen van de webpagina. -->
+  <header>
+
+    <div class="container" id="header-container">
+      
+      <!-- Logo -->
+      <a class="logo" href="/">
+        <img class="logo__img" src="assets/logo.png" alt="Logo">
+        <span class="logo__name">Robbert<br>De Troij</span>
+      </a>
+    
+      <!-- Navigatiemenu -->
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="#start">Start</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#werk">Werk</a>
+          </li>
+          <!-- <li>
+            <a class="nav__link" href="#contact">Contact</a>
+          </li> -->
+        </ul>
+      </nav>
+
+      <!-- Menu voor op kleine schermen -->
+      <div class="hamburger">
+        <i class="fa-solid fa-bars fa-xl" id="open"></i>
+        <i class="fa-solid fa-x fa-xl" id="close"></i>
+      </div>
+
+    </div>
+  
+  </header>
+
+  <!-- Maak de webpagina iets donkerder als het menu geopend wordt -->
+  <div class="overlay"></div>
+
+  <!-- Inhoud -->
+  <main>
+
+    <section class="hero" id="start">
+
+      <div class="container" id="hero-container">
+
+        <div class="hero__text">
+
+          <h1>Welkom!</h1>
+
+          <p>Mijn naam is Robbert en ik maak tekeningen.</p>
+          
+          <!-- <p>Tekenen is voor mij een manier om naar de wereld te kijken en haar te doorgronden. Al van kindsbeen af ben ik gefascineerd door de vraag hoe je aspecten van de ongelooflijk veellagige, floue werkelijkheid kunt vangen met een lijn, een toevallige veeg, of net het doorschemerende wit van het blad. Ik ben een ambachtelijke tekenaar, die graag met zijn handen onder de houtskool of inkt zit.</p> -->
+
+          <p>Op deze webpagina stel ik mijn werk tentoon. <a href="#werk">Neem gerust een kijkje!</a></p>
+          
+        </div>
+
+        <div class="hero__logo">
+          <img src="assets/logo.png" alt="Logo">
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="werk">
+
+      <div class="container">
+        
+        <h1>Werk</h1>
+
+        <h2>Portretten</h2>
+        
+        <div class="gallery">
+
+          <div class="modal">
+            <div class="modal__frame">
+              <figure class="modal__figure">
+                <img class="modal__image">
+                <figcaption>
+                  <span class="modal__caption"></span>
+                </figcaption>
+              </figure>
+              <span class="modal__close-btn">&times;</span>
+            </div>
+          </div>
+          
+          <figure class="gallery__item">
+            <img class="gallery__image" src="assets/ik.jpg" alt="Zelfportret (zacht pastelkrijt, 2026)" width="100%" loading="lazy">
+          </figure>
+
+          <figure class="gallery__item">
+            <img class="gallery__image" src="assets/irem-jonas.jpg" alt="İrem &amp; Jonas (houtskool, 2025)" width="100%" loading="lazy">
+          </figure>
+
+          <figure class="gallery__item">
+            <img class="gallery__image" src="assets/roos.jpg" alt="Schets Roos (zacht pastelkrijt, 2026)" width="100%" loading="lazy">
+          </figure>
+
+          <figure class="gallery__item">
+            <img class="gallery__image" src="assets/oud.jpg" alt="Oud (zacht pastelkrijt, 2026)" width="100%" loading="lazy">
+          </figure>
+
+          <figure class="gallery__item">
+            <img class="gallery__image" src="assets/hilda.jpg" alt="Schets Hilda (zacht pastelkrijt, 2026)" width="100%" loading="lazy">
+          </figure>
+
+          <figure class="gallery__item">
+            <img class="gallery__image" src="assets/krantenkop.jpg" alt="Krantenkop (stift op krantenpapier, 2025)" width="100%" loading="lazy">
+          </figure>
+
+          <figure class="gallery__item">
+            <img class="gallery__image" src="assets/zonnebadend.jpg" alt="Zonnebadend (houtskool en zacht pastelkrijt op papier, 2025)" width="100%" loading="lazy">
+          </figure>
+
+        </div>
+
+        <h2>Dieren</h2>
+
+        <div class="gallery">
+
+          <figure class="gallery__item">
+            <img class="gallery__image" src="assets/poezel.jpg" alt="Poezel (2024, houtskool)" width="100%" loading="lazy">
+          </figure>
+
+          <figure class="gallery__item">
+            <img class="gallery__image" src="assets/vuur-vlam.jpg" alt="Vuur &amp; Vlam (houtskool, 2024)" width="100%" loading="lazy">
+          </figure>
+
+          <figure class="gallery__item">
+            <img class="gallery__image" src="assets/bruno.jpg" alt="Bruno (houtskool, 2025)" width="100%" loading="lazy">
+          </figure>
+
+          <figure class="gallery__item">
+            <img class="gallery__image" src="assets/fuba.jpg" alt="Fubá (zacht pastelkrijt, 2025)" width="100%" loading="lazy">
+          </figure>
+
+        </div>
+
+        <h2>Sfeer</h2>
+
+        <div class="gallery">
+
+          <figure class="gallery__item">
+            <img class="gallery__image" src="assets/lighthouse.jpg" alt="Willem Dafoe en Robert Pattinson in <i>The Lighthouse</i> (houtskool, 2025)" width="100%" loading="lazy">
+          </figure>
+
+          <figure class="gallery__item">
+            <img class="gallery__image" src="assets/landschap-1.jpg" alt="Desolaat (houtskool, 2025)" width="100%" loading="lazy">
+          </figure>
+
+          <figure class="gallery__item">
+            <img class="gallery__image" src="assets/bedachtzaam-kleur.jpg" alt="Bedachtzaam (stift + digitaal ingekleurd, 2025)" width="100%" loading="lazy">
+          </figure>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- <section id="contact">
+      <div class="container">
+        <h1>Contact</h1>
+        <div class="contact-form">
+          TBA
+        </div>
+      </div>
+    </section> -->
+
+  </main>
+
+  <!-- Voettekst -->
+  <!-- Copyright -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Robbert De Troij</p>
+    </div>
+  </footer>
+  
+</body>
+</html>
