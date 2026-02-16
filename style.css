@@ -74,6 +74,7 @@ header {
 
 header a {
   color: inherit;
+  text-decoration: none;
 }
 
 #header-container {
